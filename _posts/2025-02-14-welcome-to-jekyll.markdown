@@ -27,3 +27,20 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+
+# Below code snippet supports comments using giscus (https://github.com/apps/giscus). Copy this into the post template.
+<script src="https://giscus.app/client.js"
+        data-repo="rpevey/evolio.org"
+        data-repo-id="R_kgDOJUApUA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJUApUM4CnABO"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>

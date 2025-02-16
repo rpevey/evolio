@@ -11,31 +11,46 @@
 # If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
-#
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
 title: evolio
+title_separator: "|"
+subtitle: "Exploring Science, Code & Knowledge"
 email: BioRyGuy@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  evolio is my personal blog featuring engaging data driven stories, 
-  in-depth bioinformatics reports and tutorials, and insightful 
-  scientific article reviews written by a Ph.D. neuroscientist. Discover 
-  innovative research and coding expertise in a clear, reader focused format.
+  Discover evolio — a personal blog by a Ph.D. neuroscientist. Explore 
+  data-driven stories, bioinformatics reports, tutorials, and scientific 
+  article reviews showcasing innovative research and coding expertise in 
+  a reader-focused format.
 author:
   name: "Ryan Pevey"
 logo: "/assets/images/evolio_logo3.svg"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.evolio.org/" # the base hostname & protocol for your site, e.g. http://example.com
+repository: "rpevey/evolio.org"
+locale: "en-US"
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : # Shown during giscus setup at https://giscus.app
+    category_name        : # Full text name of the category
+    category_id          : # Shown during giscus setup at https://giscus.app
+    discussion_term      : # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : # '1' for enabled (default), '0' for disabled
+    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+
+# Social Sharing
 twitter_username: jekyllrb
 github_username:  rpevey
 ORCiD: https://orcid.org/0000-0001-5995-0869
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "default", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
@@ -60,3 +75,20 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+      date_format: "%Y-%m-%d"
+      enable_copy_code_button: true
