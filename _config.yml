@@ -12,6 +12,10 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
+# Theme settings
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "default", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -54,13 +58,22 @@ bing_site_verification: "45FB75EFE682F19035F86FE77F0A953F"
 naver_site_verification:
   
 # Social Sharing
-twitter_username: jekyllrb
-github_username:  rpevey
-ORCiD: https://orcid.org/0000-0001-5995-0869
+github_username: rpevey
+og_image: "/assets/images/evolio_logo3.svg"
 
-# Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "default", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+social:
+  type:  # Person or Organization (defaults to Person)
+  name:  # If the user or organization name differs from the site's name
+  links:
+    - "https://www.linkedin.com/in/ryan-pevey-ph-d-41001147/"
+    - "https://orcid.org/0000-0001-5995-0869"
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-4GD4ZC8ECG"
+    anonymize_ip: false # default
+
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
