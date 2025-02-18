@@ -30,8 +30,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   data-driven stories, bioinformatics reports, tutorials, and scientific 
   article reviews showcasing innovative research and coding expertise in 
   a reader-focused format.
-author:
-  name: "Ryan Pevey"
+
 logo: "/assets/images/evolio_logo3.svg"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.evolio.org/" # the base hostname & protocol for your site, e.g. http://example.com
@@ -68,16 +67,33 @@ social:
     - "https://www.linkedin.com/in/ryan-pevey-ph-d-41001147/"
     - "https://orcid.org/0000-0001-5995-0869"
 
+# Analytics
 analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-4GD4ZC8ECG"
     anonymize_ip: false # default
 
+# Site Author
+author:
+  name: "Ryan Pevey"
+  avatar: "/assets/images/Headshot2.jpg"
+  
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/rpevey"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/ryan-pevey-ph-d-41001147/"
+
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -98,6 +114,21 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Outputting
+permalink: /:categories/:title/
+timezone: America/Phoenix # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Pagination with jekyll-paginate
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
 
 # Defaults
 defaults:
