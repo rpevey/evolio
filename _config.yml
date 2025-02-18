@@ -31,7 +31,7 @@ author:
 logo: "/assets/images/evolio_logo3.svg"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.evolio.org/" # the base hostname & protocol for your site, e.g. http://example.com
-repository: "rpevey/evolio.org"
+repository: "rpevey/evolio"
 locale: "en-US"
 comments:
   provider: "giscus"
@@ -41,8 +41,18 @@ comments:
     category_id          : # Shown during giscus setup at https://giscus.app
     discussion_term      : # "pathname" (default), "url", "title", "og:title"
     reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    theme                : "light" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+search: true
+search_full_content: # true, false (default, only first 50 words are indexed leading to faster load times)
+search_provider: lunr # lunr (default), algolia, google
+lunr:
+  search_within_pages: true
 
+# SEO Related
+google_site_verification: "L2GbgYRjsCxQ_DXjId-FeQnOnTdVtpmKKxEVVup5LzU"
+bing_site_verification:
+naver_site_verification:
+  
 # Social Sharing
 twitter_username: jekyllrb
 github_username:  rpevey
@@ -90,5 +100,4 @@ defaults:
       share: true
       related: true
       show_date: true
-      date_format: "%Y-%m-%d"
       enable_copy_code_button: true
