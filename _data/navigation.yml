@@ -3,22 +3,21 @@ main:
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
-    url: https://www.evolio.org/about/
+    url: /about/
   - title: "Posts"
-    url: https://www.evolio.org/posts/
-  #  url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+    url: /year-archive/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "Pages"
-    url: /page-archive/
-  - title: "Collections"
-    url: /collection-archive/
-  - title: "External Link"
-    url: https://google.com
-    target: _blank
+  #- title: "Sitemap"
+  #  url: /sitemap/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  #- title: "Pages"
+  #  url: /pages/
+  #- title: "Collections"
+  #  url: /collection-archive/
+  #- title: "External Link"
+  #  url: https://google.com
+  #  target: _blank
