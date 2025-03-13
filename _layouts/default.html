@@ -9,6 +9,28 @@ layout: compress
     {% include head.html %}
     {% include head/custom.html %}
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+	
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+
+    <!-- Load jQuery & Bootstrap (Required for Code Folding) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+
+    <!-- Code Folding Script -->
+    <script>
+    $(document).ready(function () {
+        // Hide all code blocks initially
+        $('pre').hide();
+
+        // Toggle visibility when button is clicked
+        $('.code-folding-btn').click(function () {
+            $(this).nextAll('div.sourceCode').first().find('pre').toggle();
+        });
+    });
+    </script>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
