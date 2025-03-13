@@ -1,7 +1,5 @@
 # main links
 main:
-  #- title: "Quick-Start Guide"
-  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
     url: /about/
   - title: "Posts"
@@ -10,6 +8,8 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "RNA Quest Report"
+    url: /rna-quest-report/
   #- title: "Sitemap"
   #  url: /sitemap/
   # - title: "Sample Collections"

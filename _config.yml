@@ -171,8 +171,3 @@ defaults:
       layout: single
       author_profile: false
       
-nav:
-  - title: Home
-    url: /
-  - title: RNA Quest Report
-    url: /rna-quest-report/
