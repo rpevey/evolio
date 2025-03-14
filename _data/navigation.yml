@@ -2,6 +2,8 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Showcase"
+    url: /showcase/  
   - title: "Posts"
     url: /year-archive/
   - title: "Categories"
@@ -9,7 +11,7 @@ main:
   - title: "Tags"
     url: /tags/
   - title: "RNA Quest Report"
-    url: /rna-quest-report/
+    url: /showcase/rna-quest-report/
   #- title: "Sitemap"
   #  url: /sitemap/
   # - title: "Sample Collections"
