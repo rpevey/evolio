@@ -1,7 +1,8 @@
 ---
-layout: page
 title: "Showcase"
 permalink: /showcase/
+layout: posts
+author_profile: true
 ---
 
 # Showcase
