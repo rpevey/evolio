@@ -1,11 +1,9 @@
 ---
 title: "Showcase"
 permalink: /showcase/
-layout: posts
-author_profile: true
+layout: default
+author_profile: false
 ---
-
-# Showcase
 
 This section contains interactive reports, exploratory analyses, and other data-driven projects.
 
