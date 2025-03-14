@@ -5,6 +5,6 @@ layout: posts
 author_profile: false
 ---
 
-#Showcase
+# Showcase
 
 [RNA Quest: Rethinking RNA-Seq Reports](/showcase/rna-quest-report/)

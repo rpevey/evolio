@@ -1,7 +1,7 @@
 ---
 title: "Showcase"
 permalink: /showcase/
-layout: default
+layout: single
 author_profile: false
 ---
 
