@@ -31,6 +31,45 @@ layout: compress
         });
     });
     </script>
+	
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var codeBlocks = document.querySelectorAll("pre.sourceCode");
+		codeBlocks.forEach(function(block) {
+			var button = document.createElement("button");
+			button.className = "toggle-code";
+			button.innerHTML = "Show Code";
+			button.onclick = function() {
+				if (block.style.display === "none") {
+					block.style.display = "block";
+					button.innerHTML = "Hide Code";
+				} else {
+					block.style.display = "none";
+					button.innerHTML = "Show Code";
+				}
+			};
+			block.style.display = "none"; // ✅ Hide by default
+			block.parentNode.insertBefore(button, block);
+		});
+	});
+	</script>
+	<style>
+	.toggle-code {
+		display: block;
+		margin-bottom: 10px;
+		background-color: #444;
+		color: white;
+		border: none;
+		padding: 5px 10px;
+		cursor: pointer;
+		font-size: 12px;
+		border-radius: 5px;
+	}
+	.toggle-code:hover {
+		background-color: #666;
+	}
+	</style>
+
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">

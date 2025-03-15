@@ -1,7 +1,8 @@
+<!-- html file front matter to add to the top -->
 ---
 layout: single
 title: "RNA Quest: Rethinking RNA-Seq Reports"
-permalink: /showcase/rna-quest-report/
+permalink: /rna-quest-report/
 categories: RNA-Seq
 tags: [RNA-Seq, bioinformatics, reanalysis]
 ---
@@ -24,17 +25,17 @@ tags: [RNA-Seq, bioinformatics, reanalysis]
 
 <title>RNA Quest: Rethinking RNA-Seq reports through reanalysis of previously published neuronal transcriptomes from epilepsy patients</title>
 
-<script src="/assets/rnaQuest_DESeq_jekyll_files/header-attrs-2.29/header-attrs.js"></script>
-<link href="/assets/rnaQuest_DESeq_jekyll_files/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
-<script src="/assets/rnaQuest_DESeq_jekyll_files/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<link href="/assets/rnaQuest_DESeq_jekyll_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="/assets/rnaQuest_DESeq_jekyll_files/datatables-binding-0.33/datatables.js"></script>
-<script src="/assets/rnaQuest_DESeq_jekyll_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<link href="/assets/rnaQuest_DESeq_jekyll_files/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="/assets/rnaQuest_DESeq_jekyll_files/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="/assets/rnaQuest_DESeq_jekyll_files/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
-<link href="/assets/rnaQuest_DESeq_jekyll_files/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
-<script src="/assets/rnaQuest_DESeq_jekyll_files/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<script src="rnaQuest_DESeq_jekyll_files/header-attrs-2.29/header-attrs.js"></script>
+<link href="rnaQuest_DESeq_jekyll_files/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="rnaQuest_DESeq_jekyll_files/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="rnaQuest_DESeq_jekyll_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="rnaQuest_DESeq_jekyll_files/datatables-binding-0.33/datatables.js"></script>
+<script src="rnaQuest_DESeq_jekyll_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="rnaQuest_DESeq_jekyll_files/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="rnaQuest_DESeq_jekyll_files/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="rnaQuest_DESeq_jekyll_files/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="rnaQuest_DESeq_jekyll_files/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+<script src="rnaQuest_DESeq_jekyll_files/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 
 <!-- Bootstrap & jQuery for Code Folding -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
@@ -398,13 +399,13 @@ second plot.</p>
 <span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="fu">axis</span>(<span class="dv">2</span>, <span class="at">labels =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="fu">title</span>(<span class="st">&quot;Non-normalized Gene counts&quot;</span>)</span>
 <span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="fu">text</span>(<span class="at">x =</span> <span class="fu">seq_along</span>(<span class="fu">colnames</span>(dds)), <span class="at">y =</span> <span class="sc">-</span><span class="dv">2</span>, <span class="at">labels =</span> <span class="fu">colnames</span>(dds), <span class="at">adj =</span> <span class="fl">0.5</span>, <span class="at">xpd =</span> <span class="cn">TRUE</span>, <span class="at">cex =</span> <span class="fl">0.75</span>)</span></code></pre></div>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/allCounts-1.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/allCounts-1.png" width="672" /></p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">boxplot</span>(<span class="fu">log2</span>(<span class="fu">counts</span>(dds, <span class="at">normalized =</span> <span class="cn">TRUE</span>) <span class="sc">+</span> <span class="dv">1</span>), <span class="at">axes =</span> <span class="cn">FALSE</span>, <span class="at">ylab =</span> <span class="st">&quot;log2 counts&quot;</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">axis</span>(<span class="dv">1</span>, <span class="at">labels =</span> <span class="cn">FALSE</span>, <span class="at">at =</span> <span class="fu">c</span>(<span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">40</span>, <span class="dv">1</span>)))</span>
 <span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="fu">axis</span>(<span class="dv">2</span>, <span class="at">labels =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="fu">title</span>(<span class="st">&quot;Normalized Gene counts&quot;</span>)</span>
 <span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="fu">text</span>(<span class="at">x =</span> <span class="fu">seq_along</span>(<span class="fu">colnames</span>(dds)), <span class="at">y =</span> <span class="sc">-</span><span class="dv">2</span>, <span class="at">labels =</span> <span class="fu">colnames</span>(dds), <span class="at">adj =</span> <span class="fl">0.5</span>, <span class="at">xpd =</span> <span class="cn">TRUE</span>, <span class="at">cex =</span> <span class="fl">0.75</span>)</span></code></pre></div>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/allCounts-2.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/allCounts-2.png" width="672" /></p>
 </div>
 <div id="plot-dispersion-estimates" class="section level3">
 <h3>Plot dispersion estimates</h3>
@@ -417,7 +418,7 @@ samples, have been filtered out for computational efficiency.</p>
 <span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="co"># the fitted curve.</span></span>
 <span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="fu">plotDispEsts</span>(dds)</span>
 <span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="fu">title</span>(<span class="st">&quot;Dispersion estimates&quot;</span>)</span></code></pre></div>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/dispersions-1.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/dispersions-1.png" width="672" /></p>
 </div>
 <div id="gene-biotype-treemap-for-all-genes" class="section level3">
 <h3>Gene Biotype treemap for all genes</h3>
@@ -431,7 +432,7 @@ proportion of differentially expressed genes (right figure).</p>
 <span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>biotype <span class="ot">&lt;-</span> biotype[<span class="fu">order</span>(biotype<span class="sc">$</span>Freq, <span class="at">decreasing =</span> <span class="cn">TRUE</span>), ]</span>
 <span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a><span class="fu">treemap</span>(biotype, <span class="at">index =</span> <span class="st">&quot;Var1&quot;</span>, <span class="at">vSize =</span> <span class="st">&quot;Freq&quot;</span>, <span class="at">type =</span> <span class="st">&quot;index&quot;</span>, <span class="at">palette =</span> <span class="fu">viridis</span>(<span class="fu">length</span>(biotype<span class="sc">$</span>Var1)),</span>
 <span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>    <span class="at">aspRatio =</span> <span class="fl">1.618</span><span class="sc">/</span><span class="dv">1</span>, <span class="at">title =</span> <span class="st">&quot;&quot;</span>, <span class="at">inflate.labels =</span> <span class="cn">TRUE</span>, <span class="at">lowerbound.cex.labels =</span> <span class="dv">0</span>)</span></code></pre></div>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/treemapAll-1.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/treemapAll-1.png" width="672" /></p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>biotype<span class="sc">$</span>Percent <span class="ot">&lt;-</span> <span class="fu">sapply</span>(biotype<span class="sc">$</span>Freq, <span class="cf">function</span>(prop) <span class="fu">round</span>((prop<span class="sc">/</span><span class="fu">sum</span>(biotype<span class="sc">$</span>Freq)) <span class="sc">*</span> <span class="dv">100</span>, <span class="at">digits =</span> <span class="dv">2</span>))</span>
 <span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="fu">colnames</span>(biotype) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Biotype&quot;</span>, <span class="st">&quot;Frequency&quot;</span>, <span class="st">&quot;Percent&quot;</span>)</span>
 <span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="fu">datatable</span>(<span class="fu">as.data.frame</span>(biotype), <span class="at">options =</span> <span class="fu">list</span>(<span class="at">scrollX =</span> <span class="cn">TRUE</span>, <span class="at">scrollCollapse =</span> <span class="cn">TRUE</span>), <span class="at">rownames =</span> <span class="cn">FALSE</span>,</span>
@@ -495,7 +496,7 @@ down-regulated compared to up-regulated genes.</p>
 <span id="cb15-14"><a href="#cb15-14" tabindex="-1"></a>    <span class="at">panel.background =</span> <span class="fu">element_blank</span>()</span>
 <span id="cb15-15"><a href="#cb15-15" tabindex="-1"></a>    ) <span class="sc">+</span></span>
 <span id="cb15-16"><a href="#cb15-16" tabindex="-1"></a>  <span class="fu">scale_x_discrete</span>(<span class="at">limits =</span> rev)</span></code></pre></div>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/direction1-1.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/direction1-1.png" width="672" /></p>
 </div>
 <div id="results-table-tle-vs.-tl-ref." class="section level3">
 <h3>Results table: TLE vs. TL (ref.)</h3>
@@ -521,7 +522,7 @@ with miRNA as well.</p>
 <span id="cb17-5"><a href="#cb17-5" tabindex="-1"></a>biotype <span class="ot">&lt;-</span> biotype[<span class="fu">order</span>(biotype<span class="sc">$</span>Freq, <span class="at">decreasing =</span> <span class="cn">TRUE</span>), ]</span>
 <span id="cb17-6"><a href="#cb17-6" tabindex="-1"></a><span class="fu">treemap</span>(biotype, <span class="at">index =</span> <span class="st">&quot;Var1&quot;</span>, <span class="at">vSize =</span> <span class="st">&quot;Freq&quot;</span>, <span class="at">type =</span> <span class="st">&quot;index&quot;</span>, <span class="at">palette =</span> <span class="fu">viridis</span>(<span class="fu">length</span>(biotype<span class="sc">$</span>Var1)),</span>
 <span id="cb17-7"><a href="#cb17-7" tabindex="-1"></a>    <span class="at">aspRatio =</span> <span class="fl">1.618</span><span class="sc">/</span><span class="dv">1</span>, <span class="at">title =</span> <span class="st">&quot;&quot;</span>, <span class="at">inflate.labels =</span> <span class="cn">TRUE</span>, <span class="at">lowerbound.cex.labels =</span> <span class="dv">0</span>)</span></code></pre></div>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/treemap1-1.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/treemap1-1.png" width="672" /></p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a>biotype<span class="sc">$</span>Percent <span class="ot">&lt;-</span> <span class="fu">sapply</span>(biotype<span class="sc">$</span>Freq, <span class="cf">function</span>(prop) <span class="fu">round</span>((prop<span class="sc">/</span><span class="fu">sum</span>(biotype<span class="sc">$</span>Freq)) <span class="sc">*</span> <span class="dv">100</span>, <span class="at">digits =</span> <span class="dv">2</span>))</span>
 <span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a><span class="fu">colnames</span>(biotype) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Biotype&quot;</span>, <span class="st">&quot;Frequency&quot;</span>, <span class="st">&quot;Percent&quot;</span>)</span>
 <span id="cb18-3"><a href="#cb18-3" tabindex="-1"></a><span class="fu">datatable</span>(<span class="fu">as.data.frame</span>(biotype), <span class="at">options =</span> <span class="fu">list</span>(<span class="at">scrollX =</span> <span class="cn">TRUE</span>, <span class="at">scrollCollapse =</span> <span class="cn">TRUE</span>), <span class="at">rownames =</span> <span class="cn">FALSE</span>,</span>
@@ -578,7 +579,7 @@ expression profiles.</p>
 <span id="cb20-21"><a href="#cb20-21" tabindex="-1"></a>zUp <span class="ot">&lt;-</span> (selectUp <span class="sc">-</span> <span class="fu">rowMeans</span>(selectUp))<span class="sc">/</span><span class="fu">sd</span>(selectUp)  <span class="co">#z-score</span></span>
 <span id="cb20-22"><a href="#cb20-22" tabindex="-1"></a><span class="fu">pheatmap</span>(zUp, <span class="at">cluster_rows =</span> <span class="cn">TRUE</span>, <span class="at">show_rownames =</span> <span class="cn">TRUE</span>, <span class="at">cluster_cols =</span> <span class="cn">FALSE</span>, <span class="at">annotation_col =</span> df, <span class="at">annotation_colors =</span> ann_colors,</span>
 <span id="cb20-23"><a href="#cb20-23" tabindex="-1"></a>    <span class="at">labels_row =</span> <span class="fu">mcols</span>(rld)<span class="sc">$</span>geneNew[selectUpNames], <span class="at">color =</span> <span class="fu">viridis</span>(<span class="at">n =</span> <span class="dv">256</span>, <span class="at">begin =</span> <span class="dv">0</span>, <span class="at">end =</span> <span class="dv">1</span>, <span class="at">direction =</span> <span class="sc">-</span><span class="dv">1</span>))</span></code></pre></div>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/upHeat1-1.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/upHeat1-1.png" width="672" /></p>
 <p></br></p>
 </div>
 <div id="down-regulated-genes-tle-vs.-tl-ref." class="section level4">
@@ -594,7 +595,7 @@ expression profiles.</p>
 <span id="cb21-8"><a href="#cb21-8" tabindex="-1"></a><span class="fu">pheatmap</span>(zDown, <span class="at">cluster_rows =</span> <span class="cn">TRUE</span>, <span class="at">show_rownames =</span> <span class="cn">TRUE</span>, <span class="at">cluster_cols =</span> <span class="cn">TRUE</span>, <span class="at">annotation_col =</span> df,</span>
 <span id="cb21-9"><a href="#cb21-9" tabindex="-1"></a>    <span class="at">annotation_colors =</span> ann_colors, <span class="at">labels_row =</span> <span class="fu">mcols</span>(rld)<span class="sc">$</span>geneNew[selectDownNames], <span class="at">color =</span> <span class="fu">viridis</span>(<span class="at">n =</span> <span class="dv">256</span>,</span>
 <span id="cb21-10"><a href="#cb21-10" tabindex="-1"></a>        <span class="at">begin =</span> <span class="dv">0</span>, <span class="at">end =</span> <span class="dv">1</span>, <span class="at">direction =</span> <span class="sc">-</span><span class="dv">1</span>))</span></code></pre></div>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/downHeat1-1.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/downHeat1-1.png" width="672" /></p>
 <p></br></p>
 </div>
 <div id="up-regulated-and-down-regulated-genes-tle-vs.-tl-ref."
@@ -608,12 +609,12 @@ dataset.</p>
 <span id="cb22-4"><a href="#cb22-4" tabindex="-1"></a><span class="fu">pheatmap</span>(zUpDown, <span class="at">fontsize =</span> <span class="dv">8</span>, <span class="at">cluster_rows =</span> <span class="cn">TRUE</span>, <span class="at">show_rownames =</span> <span class="cn">TRUE</span>, <span class="at">cluster_cols =</span> <span class="cn">FALSE</span>, <span class="at">annotation_col =</span> df,</span>
 <span id="cb22-5"><a href="#cb22-5" tabindex="-1"></a>    <span class="at">annotation_colors =</span> ann_colors, <span class="at">labels_row =</span> <span class="fu">mcols</span>(rld)<span class="sc">$</span>geneNew[selectUpDownNames], <span class="at">color =</span> <span class="fu">viridis</span>(<span class="at">n =</span> <span class="dv">256</span>,</span>
 <span id="cb22-6"><a href="#cb22-6" tabindex="-1"></a>        <span class="at">begin =</span> <span class="dv">0</span>, <span class="at">end =</span> <span class="dv">1</span>, <span class="at">direction =</span> <span class="sc">-</span><span class="dv">1</span>))</span></code></pre></div>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/upDownHeat1-1.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/upDownHeat1-1.png" width="672" /></p>
 </div>
 </div>
 <div id="volcano-plot-tle-vs.-tl-ref." class="section level3">
 <h3>Volcano plot: TLE vs. TL (ref.)</h3>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/volcano1-1.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/volcano1-1.png" width="672" /></p>
 </div>
 <div id="gene-expression-plots" class="section level3">
 <h3>Gene expression plots</h3>
@@ -641,7 +642,7 @@ boxplots, dot plots) help assess significance between groups.</p>
 <span id="cb23-15"><a href="#cb23-15" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">&quot;segment&quot;</span>, <span class="at">x =</span> <span class="dv">2</span>, <span class="at">xend =</span> <span class="dv">2</span>, <span class="at">y =</span> y_max <span class="sc">*</span> <span class="fl">1.3</span>, <span class="at">yend =</span> y_max <span class="sc">*</span> <span class="fl">1.2</span>)</span>
 <span id="cb23-16"><a href="#cb23-16" tabindex="-1"></a></span>
 <span id="cb23-17"><a href="#cb23-17" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/maxPlot1-1.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/maxPlot1-1.png" width="672" /></p>
 <p></br></p>
 </div>
 <div id="most-down-regulated-gene-tle-vs.-tl-ref."
@@ -664,7 +665,7 @@ class="section level4">
 <span id="cb24-15"><a href="#cb24-15" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">&quot;segment&quot;</span>, <span class="at">x =</span> <span class="dv">2</span>, <span class="at">xend =</span> <span class="dv">2</span>, <span class="at">y =</span> y_max <span class="sc">*</span> <span class="fl">1.3</span>, <span class="at">yend =</span> y_max <span class="sc">*</span> <span class="fl">1.2</span>)</span>
 <span id="cb24-16"><a href="#cb24-16" tabindex="-1"></a></span>
 <span id="cb24-17"><a href="#cb24-17" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/minPlot1-1.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/minPlot1-1.png" width="672" /></p>
 <p></br></p>
 </div>
 <div id="plot-notable-genes-of-interest-tle-vs.-tl-ref."
@@ -690,7 +691,7 @@ class="section level4">
 <span id="cb25-17"><a href="#cb25-17" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">&quot;segment&quot;</span>, <span class="at">x =</span> <span class="dv">2</span>, <span class="at">xend =</span> <span class="dv">2</span>, <span class="at">y =</span> y_max <span class="sc">*</span> <span class="fl">1.3</span>, <span class="at">yend =</span> y_max <span class="sc">*</span> <span class="fl">1.2</span>)</span>
 <span id="cb25-18"><a href="#cb25-18" tabindex="-1"></a></span>
 <span id="cb25-19"><a href="#cb25-19" tabindex="-1"></a>p</span></code></pre></div>
-<p><img src="/assets/rnaQuest_DESeq_jekyll_files/figure-html/goi1-1.png" width="672" /></p>
+<p><img src="rnaQuest_DESeq_jekyll_files/figure-html/goi1-1.png" width="672" /></p>
 </div>
 </div>
 </div>
