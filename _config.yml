@@ -99,6 +99,7 @@ plugins:
 # Reading files
 include:
   - _pages
+  - assets/css/custom.css
 
 # Exclude from processing.
 # The following items will not be processed, by default.
