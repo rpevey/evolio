@@ -13,16 +13,10 @@ layout: compress
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
 
-    <!-- Load jQuery & Bootstrap (Required for Code Folding) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	
-    <!-- Code Folding Script -->
     <script>
 	document.addEventListener("DOMContentLoaded", function() {
 		var codeBlocks = document.querySelectorAll("pre.sourceCode");
-		codeBlocks.forEach(function(block) {
+		codeBlocks.forEach(function(block, index) {
 			var button = document.createElement("button");
 			button.className = "toggle-code btn btn-sm btn-dark";
 			button.innerHTML = "Show Code";
@@ -35,20 +29,29 @@ layout: compress
 					button.innerHTML = "Show Code";
 				}
 			};
-			block.style.display = "none"; // Hide code by default
+			block.style.display = "none"; // Hide all code blocks by default
 			block.parentNode.insertBefore(button, block);
 		});
 	});
 	</script>
 
-	<!-- Styling for the Show/Hide Code Button -->
 	<style>
 	.toggle-code {
+		display: block;
 		margin-bottom: 10px;
-		border-radius: 5px;
+		background-color: #444;
+		color: white;
+		border: none;
+		padding: 5px 10px;
+		cursor: pointer;
 		font-size: 12px;
+		border-radius: 5px;
+	}
+	.toggle-code:hover {
+		background-color: #666;
 	}
 	</style>
+
 
   </head>
 
