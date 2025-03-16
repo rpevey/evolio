@@ -301,8 +301,13 @@ that we’ve created for them.</p>
 <pre><code>## &lt;button class=&quot;code-folding-btn btn btn-default&quot;&gt;Show/Hide Code&lt;/button&gt;</code></pre>
 <pre class="r"><code>input_directory = &#39;C:/Users/ryanp/Documents/evolio/Posts/rnaQuest/data/&#39;
 # setwd(input_directory)</code></pre>
+</details>
+
 <div id="load-libraries" class="section level3">
 <h3>Load libraries</h3>
+
+<details>
+  <summary>Click to expand code</summary>
 <pre class="r"><code>library(ggplot2)
 library(limma)
 library(Glimma)
@@ -363,6 +368,9 @@ resTable &lt;- read.csv(paste0(&quot;C:/Users/ryanp/Documents/evolio/Posts/rnaQu
 
 <div id="create-differential-expression-object" class="section level3">
 <h3>Create Differential expression object</h3>
+
+<details>
+  <summary>Click to expand code</summary>
 <pre class="r"><code># This block of code is not executed, but provides the details of how the DESeq object (dds) was
 # created. Create sample information table
 coldata &lt;- metadata[, c(&quot;condition&quot;, &quot;ID&quot;, &quot;Run&quot;)]
@@ -384,6 +392,8 @@ dds &lt;- DESeq(dds)
 # Remove nonconverged genes
 dds &lt;- dds[which(mcols(dds)$betaConv), ]</code></pre>
 </div>
+</details>
+
 <div id="exploratory-data-analysis" class="section level2">
 <h2>Exploratory data analysis</h2>
 <p>Exploratory Data Analysis (EDA) is the process of visually and
