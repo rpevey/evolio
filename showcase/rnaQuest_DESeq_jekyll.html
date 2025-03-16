@@ -1338,6 +1338,28 @@ functions behave.</p>
 
 <!-- code folding -->
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var codeBlocks = document.querySelectorAll("pre.sourceCode");
+    codeBlocks.forEach(function(block) {
+        var button = document.createElement("button");
+        button.className = "toggle-code btn btn-sm btn-dark";
+        button.innerHTML = "Show Code";
+        button.onclick = function() {
+            if (block.style.display === "none") {
+                block.style.display = "block";
+                button.innerHTML = "Hide Code";
+            } else {
+                block.style.display = "none";
+                button.innerHTML = "Show Code";
+            }
+        };
+        block.style.display = "none"; // ✅ Hides code by default
+        block.parentNode.insertBefore(button, block);
+    });
+});
+</script>
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
