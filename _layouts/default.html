@@ -71,6 +71,13 @@ layout: compress
       </div>
     {% endif %}
 
+	{% if page.toc %}
+	  <nav class="page__toc">
+		<h3>On this page</h3>
+		{% include toc.html html=content %}
+	  </nav>
+	{% endif %}
+
     <div id="footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}

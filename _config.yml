@@ -33,7 +33,7 @@ description: >- # this means to ignore newlines in the following block of text.
   and critical reviews of groundbreaking research — all presented in a clear, 
   engaging, and reader-focused format.
 
-logo: "/assets/images/evolio_logo3.svg"
+logo: "/assets/images/evolio_logo4.svg"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.evolio.org/" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "rpevey/evolio"
