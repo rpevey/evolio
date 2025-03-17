@@ -14,7 +14,7 @@
 
 # Theme settings
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "default", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "default", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,

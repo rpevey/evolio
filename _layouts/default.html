@@ -29,17 +29,27 @@ layout: compress
 
 
 	<style>
-	summary {
-		cursor: pointer;
-		font-weight: bold;
-		margin-bottom: 5px;
-	}
 	details {
 		border: 1px solid #ccc;
 		padding: 10px;
 		margin-bottom: 10px;
 		background-color: #f8f9fa;
 		border-radius: 5px;
+	}
+
+	summary {
+		cursor: pointer;
+		font-weight: bold;
+		background-color: #444; /* Dark background */
+		color: white;
+		padding: 5px 10px;
+		border-radius: 5px;
+		display: inline-block;
+		transition: background-color 0.3s;
+	}
+
+	summary:hover {
+		background-color: #666; /* Lighter gray on hover */
 	}
 	</style>
 
