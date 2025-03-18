@@ -17,6 +17,13 @@ remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "default", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 enable_toc: true
 
+kramdown:
+  input: GFM
+  auto_ids: true
+  parse_block_html: true
+  syntax_highlighter_opts:
+    default_lang: r
+
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -126,9 +133,6 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
-kramdown:
-  auto_ids: true
-  parse_block_html: true
 
 # Outputting
 permalink: /:categories/:title/
