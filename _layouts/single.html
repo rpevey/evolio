@@ -38,6 +38,21 @@ layout: default
           {% include page__meta.html %}
         </header>
       {% endunless %}
+	  
+	  <section class="page__content" itemprop="text">
+		{% if page.toc %}
+		  <aside class="sidebar__right">
+			<div class="widget toc">
+			  <h2 class="widget-title">On This Page</h2>
+			  <nav id="toc">
+				{% include toc.html html=content %}
+			  </nav>
+			</div>
+		  </aside>
+		{% endif %}
+		{{ content }}
+		{% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+	  </section>
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
@@ -64,20 +79,7 @@ layout: default
     {% endif %}
   </article>
   
-  <section class="page__content" itemprop="text">
-        {% if page.toc %}
-		  <aside class="sidebar__right">
-			<div class="widget toc">
-			  <h2 class="widget-title">On This Page</h2>
-			  <nav id="toc">
-				{% include toc.html html=content %}
-			  </nav>
-			</div>
-		  </aside>
-		{% endif %}
-        {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-      </section>
+
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
