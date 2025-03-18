@@ -126,6 +126,9 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
+kramdown:
+  auto_ids: true
+  parse_block_html: true
 
 # Outputting
 permalink: /:categories/:title/
