@@ -13,21 +13,6 @@ layout: compress
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
 
-    <script>
-	document.addEventListener("DOMContentLoaded", function() {
-		var codeBlocks = document.querySelectorAll("pre.sourceCode");
-		codeBlocks.forEach(function(block) {
-			var wrapper = document.createElement("details");
-			var summary = document.createElement("summary");
-			summary.textContent = "Click to expand code";
-			wrapper.appendChild(summary);
-			block.parentNode.insertBefore(wrapper, block);
-			wrapper.appendChild(block);
-		});
-	});
-	</script>
-
-
 	<style>
 	details {
 		border: 1px solid #ccc;
