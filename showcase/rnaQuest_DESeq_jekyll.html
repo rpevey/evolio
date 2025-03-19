@@ -8,7 +8,7 @@ show_date: true
 permalink: /showcase/rna-quest-report/
 categories: RNA-Seq
 tags: [RNA-Seq, bioinformatics, reanalysis]
-toc: true
+toc: false
 classes: wide
 read_time: true
 comments: true
@@ -67,15 +67,7 @@ comments: true
 
 <body>
 
-
-
-
-<h1 class="title toc-ignore">RNA Quest: Rethinking RNA-Seq reports
-through reanalysis of previously published neuronal transcriptomes</h1>
-<h4 class="author">Ryan Pevey</h4>
-<h4 class="date">03/18/25</h4>
-
-
+<p class="author">by Ryan Pevey</p>
 
 <p><strong>If you’re reading this right now, this is a rough draft and
 I’m working on outputting the final post. Feel free to check back in or
@@ -116,17 +108,14 @@ transcriptome. Those counts files are the input files for this analysis.
 If you are not a biologist, I’ve tried to make this report focused on
 their viewpoint, to help facilitate a deeper exploration of the dataset
 that we’ve created for them.</p>
-
 <details>
   <summary>Click to expand code</summary>
 <pre class="r"><code># setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 # input_directory = &#39;../../data/&#39;
 # setwd(input_directory)</code></pre>
 </details>
-
 <div id="load-libraries" class="section level2">
 <h2>Load libraries</h2>
-
 <details>
   <summary>Click to expand code</summary>
 <pre class="r"><code>library(ggplot2)
