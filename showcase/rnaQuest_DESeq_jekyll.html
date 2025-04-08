@@ -205,7 +205,7 @@ in a way that an excel file will just never provide, hopefully they even
 find it fun! Not to mention the polish and professional flair this kind
 of effort can lend to your output. Maybe this project can provide a
 better framework for reporting results to collaborators, I have a
-standalone html file (here) that could be provided to a biologist as an
+standalone html file (<a href="https://github.com/rpevey/rnaQuest/blob/main/bin/rnaQuest_DESeq.html">rnaQuest_DESeq.html</a>) that could be provided to a biologist as an
 entry point to understanding the results, and just bundle it alongside
 the standard results files that you normally provide. That also provides
 privacy for unpublished data as nothing is hosted online, people can
@@ -213,7 +213,7 @@ just download the html file locally and open it in the browser on their
 computer. If you decide to make the portal public later as part of the
 publication process, you’ve now just made a fancy web portal for anyone
 to explore your data with.</p>
-<p>Maybe, you’re new to RNA-Seq analysis and you’ve come across this
+<p>Maybe you’re new to RNA-Seq analysis and you’ve come across this
 post as you’re doing your first analysis. If that’s the case, I hope I
 can convince you early in your journey to develop good communication
 skills. As a data scientist, the results files and reports that you
@@ -426,7 +426,7 @@ beneath it or download it by clicking the download graph data button to
 capture it as a csv.</p>
 <p>I have the gene expression plot hosted by a
 <a href="https://render.com/">Render</a> server then piped into this
-page through an iframe. So if the plot isn’t loading correctly it has
+page through an iframe. So if the plot isn’t loading correctly, it has
 probably just gone inactive and you can find it here
 (<a href="https://geneexprdash.onrender.com/">Gene Expression
 Dashboard</a>). Actually, if you visit there then first or just reload
@@ -498,7 +498,7 @@ write.csv(datTable, file = &quot;../../results/resTable1.csv&quot;, row.names = 
 
 <p style="font-size: 0.9rem; text-align: center;">
 <strong>Table 1:</strong> These are the results of the differential
-expression analysis when comparing, <strong>Epilepsy</strong> and
+expression analysis when comparing <strong>Epilepsy</strong> and
 <strong>Control</strong> (ref.) neurons. The columns are ordered by
 log2FoldChange with up-regulated genes at the top and down-regulated
 genes at the bottom. Numeric values listed to 3 significant digits. An
@@ -623,8 +623,8 @@ post-transcriptional gene regulation normally associated with roles in
 development
 (<a href="https://doi.org/10.1161/hypertensionaha.111.203489">Fu et.
 al., 2013</a>) and homeostasis through interacting with SOX6-mediated
-Wnt signalling (<a href="https://doi.org/10.2147/IJGM.S278538">Cao et.
-al., 2021</a>). So, we’re already seeing Wnt signalling showing up as a
+Wnt signaling (<a href="https://doi.org/10.2147/IJGM.S278538">Cao et.
+al., 2021</a>). So, we’re already seeing Wnt signaling showing up as a
 potential dysregulated pathway.</p>
 </div>
 </div>
@@ -1374,7 +1374,7 @@ write_csv(final_df, &quot;results/dash_expression_data.csv&quot;)
 statistically examining data to identify patterns, trends, and potential
 issues before formal analysis. It helps ensure data quality, detect
 outliers, and guide analytical decisions. If you aren’t doing the
-analyses yourself, you might normally not even be presented these
+analysis yourself, you might normally not even be presented these
 figures. But they’re important sanity checks to ensure data quality.
 These steps were performed before the results presented above, but I’m
 presenting them here for the sake of completeness.</p>
@@ -1434,7 +1434,7 @@ especially visualizations must be done on a lower number of dimensions,
 a small handful or maybe even just two.</p>
 <p>In comes Principal Component Analysis (PCA) and Multidimensional
 Scaling (MDS) plots, they serve similar functions to each other and are
-interpretted in roughly the same way for our purposes here. PCA and MDS
+interpreted in roughly the same way for our purposes here. PCA and MDS
 are dimensionality reduction techniques used in RNA-Seq analysis to
 visualize patterns of similarity or difference between samples. They
 transform high-dimensional gene expression data into a smaller number of
@@ -1500,7 +1500,7 @@ for all genes in the dataset. The area of the rectangle is proportional
 to the percentage of each biotype. The area of each of the rectangles is
 proportional to the percentage of each biotype when comparing
 <strong>Epilepsy</strong> and <strong>Control</strong> (ref.). The
-majority are protein coding which is normal, but protein coding genes
+majority are protein coding, which is normal, but protein coding genes
 make up a significantly higher proportion of differentially expressed
 genes (right figure).</p>
 
