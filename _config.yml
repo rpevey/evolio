@@ -17,13 +17,6 @@ remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "default", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 enable_toc: true
 
-kramdown:
-  input: GFM
-  auto_ids: true
-  parse_block_html: true
-  syntax_highlighter_opts:
-    default_lang: r
-
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -134,6 +127,13 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 # Conversion
 markdown: kramdown
 
+kramdown:
+  input: GFM
+  auto_ids: true
+  parse_block_html: true
+  syntax_highlighter_opts:
+    default_lang: r
+
 # Outputting
 permalink: /:categories/:title/
 timezone: America/Phoenix # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -149,6 +149,11 @@ compress_html:
   ignore:
     envs: development
 
+# Declare your collections explicitly here:
+collections:
+  showcase:
+    output: true
+    
 # Defaults
 defaults:
   # _posts
@@ -171,6 +176,19 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # _showcase
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      show_date: true
+      enable_copy_code_button: true
   #Add collections below
   # _foo
   - scope:
