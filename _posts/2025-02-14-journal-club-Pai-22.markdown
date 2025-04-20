@@ -2,7 +2,7 @@
 layout: single
 title:  "Journal Club: Glial pathology in human temporal lobe epilepsy"
 date:   2025-03-25
-categories: [rnaQuest, journal-club]
+categories: [rnaQuest, journalClub]
 tags: [RNA-Seq, scRNA-Seq, epilepsy, glia, transcriptomics, multiomics, RNA Quest]
 comments: true
 ---
@@ -115,4 +115,4 @@ Open data fuels open science.
 
 ### Stay Connected
 
-If you’re a student, researcher, or just a science enthusiast, I’d love to hear your thoughts. Reach out or subscribe for more deep dives into brain research, data storytelling, and big data reanalysis.
+If you’re a student, researcher, or just a science enthusiast, I’d love to hear your thoughts. Reach out or follow along via RSS for more deep dives into brain research, data storytelling, and big data reanalysis.

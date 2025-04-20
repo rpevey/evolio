@@ -153,6 +153,7 @@ compress_html:
 collections:
   showcase:
     output: true
+    permalink: /showcase/:name/
     
 # Defaults
 defaults:
