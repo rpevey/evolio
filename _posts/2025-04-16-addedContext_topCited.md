@@ -65,11 +65,12 @@ far. The previous list was dominated by biology technique papers and
 they’re still there. Those papers are joined by machine learning and
 psychology. This time around though, we only got a table. So let’s fix
 that. I’ve followed some of the stylistic choices of their other plot
-above, with some minor tweaks for my own eye. Overall, the trend seems
-to match expectations in the figure but I think this highlights how much
-variability there is between the datasets. Especially where the machine
-learning and AI focused papers seem to have higher variability in the
-range of documented citations.
+above, with some minor tweaks for my own eye. The blue bar represents
+the highest and lowest recorded number of citations within the five
+datasets. Overall, the trend seems to match expectations in the figure
+but I think this highlights how much variability there is between the
+datasets. Especially where the machine learning and AI focused papers
+seem to have higher variability in the range of documented citations.
 
 <figure style="background-color: #ffffff; padding: 1rem; border-radius: 6px;">
 <img src="/assets/2025-04-16-addedContext_topCited_files/horizontalBars.png" alt="Citation ranges for top 25 most cited papers of the 21st century." width="700">
