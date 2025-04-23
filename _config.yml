@@ -1,6 +1,7 @@
-# Welcome to Jekyll!
+# Welcome to evolio!
 #
-# This config file is meant for settings that affect your whole blog, values
+# My personal blog created using Jekyll and the minimal mistakes theme for GitHub pages.
+# This config file is meant for settings that affect the whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
 # feature for the data you need to update frequently.
@@ -101,6 +102,7 @@ plugins:
 include:
   - _pages
   - assets/css/custom.css
+  - _includes/head/custom.html
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -121,6 +123,10 @@ include:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Activate custom head
+head:
+  custom: custom-head
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 

@@ -94,7 +94,7 @@ that? Maybe, the shear number of Google scholar citations are less
 biased. Maybe the Scopus database, as arguably the most academic
 focused, is more siloed or focused on methods papers than the others. Or
 maybe Scopus is just picking up higher quality papers better than the
-other four databases. A honorable mention is also that the Web of
+other four databases. An honorable mention is also that the Web of
 Science dataset seems to dislike the Random forests paper to a hilarious
 degree.
 
@@ -108,7 +108,8 @@ of the 21st century across all five databases.</em>
 </p>
 
 Here’s the table showing the data that went into creating figure 2, in
-case you were curious.
+case you were curious. It recreates the table from the original Nature
+feature, but mine includes the top 25 papers instead of just the top 10.
 
 <p style="font-size: 0.8rem; text-align: center;">
 <strong>Table 1:</strong> The highest and lowest recorded number of
