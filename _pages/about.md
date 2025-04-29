@@ -11,5 +11,5 @@ author_profile: false
 	 style="max-width: 200px; border-radius: 50%; margin-bottom: 20px;" />
 
 
-Discover evolio — a personal blog by a Ph.D. neuroscientist. Explore data-driven stories, bioinformatics reports, tutorials, 
+Discover evolio - a personal blog by a Ph.D. neuroscientist. Explore data-driven stories, bioinformatics reports, tutorials, 
 and scientific article reviews showcasing innovative research and coding expertise in a reader-focused format.

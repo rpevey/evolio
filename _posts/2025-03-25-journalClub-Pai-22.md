@@ -2,7 +2,7 @@
 layout: single
 title:  "Journal Club: Glial pathology in human temporal lobe epilepsy"
 date:   2025-03-25
-last_modified_at: 2025-04-23
+last_modified_at: 2025-04-28
 categories: [rnaQuest, journalClub]
 tags: [RNA-Seq, scRNA-Seq, epilepsy, glia, transcriptomics, multiomics, RNA Quest]
 comments: true
@@ -35,7 +35,7 @@ They addressed this with two similar methods each with their own benefits. First
 Then they executed **single cell RNA sequencing (scRNA-seq)** on whole cell human brain tissue from:
 
 - Individuals with medically refractory TLE (surgical resections).
-- Previously published Temporal lobectomy samples from medically refractory seizure patients where the locus was deeper than the removed temporal lobe tissue [Darmanis, 2015](https://doi.org/10.1073/pnas.1507125112) (also surgical resections).
+- Previously published Temporal lobectomy samples from medically refractory seizure patients where the locus was deeper than the removed temporal lobe tissue ([Darmanis, 2015](https://doi.org/10.1073/pnas.1507125112)) (also surgical resections).
 
 
 
