@@ -2,7 +2,7 @@
 title: "Making data accessible (and beautiful) for everybody: Meet Viridis"
 author: "Ryan Pevey"
 date: "2025-04-10"
-last_modified_at: "2025-04-29"
+last_modified_at: "2025-05-02"
 output: 
   md_document:
     variant: gfm  # GitHub-Flavored Markdown (compatible with Jekyll)
@@ -12,7 +12,7 @@ layout: single  # This tells Jekyll to use its default theme
 always_allow_html: true # Ensures widgets and interactive elements render
 categories: [hotTakes, fieldNotes]
 tags: [data viz, accessibility, color palettes, color blindness, viridis, r, python, scientific communication]
-excerpt: "Why the Viridis color palette is a better choice for data visualization? Improving accessibility for colorblind users, boosting clarity, and helping your figures stand out for the right reasons."
+excerpt: "Why is the Viridis color palette a better choice for data visualization? Improving accessibility for colorblind users, boosting clarity, and helping your figures stand out for the right reasons."
 ---
 
 <style>
@@ -279,6 +279,10 @@ Further Reading & References
 - [Medium: The art of color schemes in
   R](https://blog.devgenius.io/the-art-of-color-schemes-in-r-base-and-viridis-palettes-141f2b613541)
 - [R Graph Gallery](https://r-graph-gallery.com/package/viridis.html)
+- [Data Visualization
+  Society](https://www.datavisualizationsociety.org/)
+- [Dam inventory of US and condition: a nice example of
+  viridis](https://observablehq.observablehq.cloud/framework-example-us-dams/)
 
 ### Scripts
 

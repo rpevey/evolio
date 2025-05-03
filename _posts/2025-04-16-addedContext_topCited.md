@@ -12,6 +12,7 @@ layout: single  # This tells Jekyll to use its default theme
 always_allow_html: true # Ensures widgets and interactive elements render
 categories: [addedContext]
 tags: [data viz, reanalysis, science media, scientific publication, research trends]
+excerpt: "Nature published a list. I made it visual. Explore the top 25 most cited scientific papers of the 21st century with interactive plots."
 ---
 
 <style>

@@ -6,6 +6,7 @@ last_modified_at: 2025-04-28
 categories: [rnaQuest, journalClub]
 tags: [RNA-Seq, scRNA-Seq, epilepsy, glia, transcriptomics, multiomics, RNA Quest]
 comments: true
+excerpt: "This journal club post explores a great study by Pai et al. (2022) that uses high-resolution transcriptomics to uncover glial-specific changes in human temporal lobe epilepsy (TLE). From identifying hybrid astrocyte–OPC populations to rethinking cell-type contributions to seizure pathology, this post summarizes key findings, discusses limitations, and links to an interactive reanalysis I performed as part of my RNA Quest project."
 ---
 
 ### Introduction: Glial Cells and the Landscape of Epilepsy Research
