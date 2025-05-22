@@ -12,6 +12,9 @@ main:
     url: /tags/
   - title: "RNA Quest"
     url: /showcase/rna-quest-report/
+  - title: Gallery
+    url: /gallery/
+
   #- title: "Sitemap"
   #  url: /sitemap/
   # - title: "Sample Collections"

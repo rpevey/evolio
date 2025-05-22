@@ -234,7 +234,7 @@ changes or improvements made specifically for accessibility (originally
 intended to benefit disabled individuals) end up benefiting everyone,
 often in unexpected ways. It’s named after curb cuts, where the curb of
 a sidewalk are brought down to street level smoothly so that people with
-movement disorders can navigate the city they live in more easily. But
+movement difficulties can navigate the city they live in more easily. But
 many more people gain utility from the inclusion of curb cuts than the
 original intended beneficiaries. Any of us that have pushed around baby
 strollers, or my sons that are learning to ride their bikes, even just
