@@ -10,9 +10,9 @@ output:
     preserve_yaml: true
 layout: single  # This tells Jekyll to use its default theme
 always_allow_html: true # Ensures widgets and interactive elements render
-categories: [hotTakes, fieldNotes]
+categories: [freeRange, hotTakes]
 tags: [data viz, accessibility, color palettes, color blindness, viridis, r, python, scientific communication]
-excerpt: "Why is the Viridis color palette a better choice for data visualization? Improving accessibility for colorblind users, boosting clarity, and helping your figures stand out for the right reasons."
+excerpt: "Why the Viridis color palette is a better choice for data visualization? Improving accessibility for colorblind users, boosting clarity, and helping your figures stand out for the right reasons."
 ---
 
 <style>
@@ -122,8 +122,7 @@ end and everywhere in between.
 
 Viridis takes into account this change in color acuity across the range
 of perception by **stretching** some parts of the spectrum and
-**compressing** others. That leads to a palette that is **more
-perceptually even** across its’ range. If you look at the individual
+**compressing** others. That leads to a palette that is **more perceptually even** across its’ range. If you look at the individual
 bands of color in the Viridis palette above, they should appear to be
 roughly the same change across each step of the whole palette. This, in
 turn, prevents your visualization from accidentally over-emphasizing (or
