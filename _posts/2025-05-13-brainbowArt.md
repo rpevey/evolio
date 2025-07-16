@@ -14,7 +14,7 @@ header:
   overlay_filter: 0.6 # optional darkening overlay, 0.0 to 1.0
   actions:
     - label: "View Code on GitHub"
-      url: "https://github.com/rpevey/YOUR_REPO/blob/main/PATH_TO_NOTEBOOK.ipynb"
+      url: "https://https://github.com/rpevey/brainbowArt"
 always_allow_html: true # Ensures widgets and interactive elements render
 categories: [freeRange]
 tags: [data viz, data visualization, accessibility, color palettes, color blindness, viridis, r, python, science communication, brainbow, generative art, procedural graphics, python, neuroscience, neuronal model, p5js, matplotlib, cortex, neocortex]
@@ -244,7 +244,7 @@ into brain research, data storytelling, and big data reanalysis.
   "image": "https://www.evolio.org/assets/2025-05-13-brainbowArt/brainbowEdgeToEdge.png",
   "author": {
     "@type": "Person",
-    "name": "Ry Guy"
+    "name": "Ryan Pevey"
   },
   "publisher": {
     "@type": "Organization",
