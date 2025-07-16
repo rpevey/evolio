@@ -3,3 +3,25 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+.vscode/
+.idea/
+
+# Ruby bundler directory (often appears with some Jekyll setups)
+.bundle/
+
+# JupyterLab checkpoint files (in case you drop notebooks into blog posts)
+.ipynb_checkpoints/
+
+# Node/npm stuff (if you experiment with custom scripts or plugins)
+node_modules/

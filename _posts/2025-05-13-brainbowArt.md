@@ -14,7 +14,7 @@ header:
   overlay_filter: 0.6 # optional darkening overlay, 0.0 to 1.0
   actions:
     - label: "View Code on GitHub"
-      url: "https://https://github.com/rpevey/brainbowArt"
+      url: "https://github.com/rpevey/brainbowArt"
 always_allow_html: true # Ensures widgets and interactive elements render
 categories: [freeRange]
 tags: [data viz, data visualization, accessibility, color palettes, color blindness, viridis, r, python, science communication, brainbow, generative art, procedural graphics, python, neuroscience, neuronal model, p5js, matplotlib, cortex, neocortex]
