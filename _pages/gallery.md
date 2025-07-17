@@ -23,6 +23,22 @@ Welcome to the evolio gallery: a curated collection of science-inspired visual a
 </style>
 
 <div class="gallery-grid">
+  <a href="/assets/gallery/brainbowEdgeToEdge.png"
+    title="Brainbow Field">
+      <img src="/assets/gallery/brainbowArt.png"
+           alt="A digital artwork inspired by brainbow fluorescence microscopy, showing a dense field of neuron-like branching patterns in vibrant, multi-colored hues.">
+  </a>
+  
+  
+  
+  <a href="/assets/gallery/brainbowEdgeToEdgeViridis.png"
+    title="Brainbow Field">
+      <img src="/assets/gallery/brainbowArt.png"
+           alt="A digital artwork inspired by brainbow fluorescence microscopy, showing a dense field of neuron-like branching patterns in vibrant, multi-colored hues.">
+  </a>
+  
+  
+  
   <a href="/assets/gallery/brainbowArt.png"
     title="Brainbow Field">
       <img src="/assets/gallery/brainbowArt.png"

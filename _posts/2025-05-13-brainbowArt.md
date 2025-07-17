@@ -2,7 +2,7 @@
 title: "Let's Make Some Brainbow Art: An artistic experiment in procedural neurons."
 author: "Ryan Pevey"
 date: "2025-07-09"
-last_modified_at: "2025-07-09"
+last_modified_at: "2025-07-16"
 output: 
   md_document:
     variant: gfm  # GitHub-Flavored Markdown (compatible with Jekyll)
